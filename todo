@@ -1,0 +1,109 @@
+# TODO LIST – Projet Takalo-Takalo (Trinôme)
+
+---
+
+## 🗄️ BASE DE DONNÉES (Rova 3904)
+
+### Modélisation
+- [ ] Identifier les entités (users, admins, objets, catégories, échanges)
+- [ ] Créer le MCD
+- [ ] Créer le MLD
+- [ ] Définir les relations entre tables
+
+- [ ] creer les models / entités
+
+### Implémentation SQL
+- [ ] Créer la base de données (MySQL/PostgreSQL)
+- [ ] Créer la table users
+- [ ] Créer la table admins
+- [ ] Créer la table categories
+- [ ] Créer la table objects
+- [ ] Créer la table object_photos
+- [ ] Créer la table exchanges
+- [ ] Créer la table ownership_history
+- [ ] Ajouter les clés primaires
+- [ ] Ajouter les clés étrangères
+- [ ] Ajouter les contraintes (NOT NULL, UNIQUE)
+
+### Données de test
+- [ ] Insérer des utilisateurs fictifs
+- [ ] Insérer des catégories
+- [ ] Insérer des objets avec photos
+- [ ] Simuler des propositions d’échange
+- [ ] Simuler des échanges acceptés
+- [ ] Remplir l’historique des propriétaires
+
+---
+
+## 🎨 FRONT-END (Rova 3883)
+
+### Général
+- [ ] Choisir un template Bootstrap
+- [ ] Créer le layout global (header / footer)
+- [ ] Ajouter les noms + numéros ETU dans le footer
+
+### Frontoffice (Utilisateur)
+- [ ] Page inscription
+- [ ] Page login utilisateur
+- [ ] Page profil utilisateur
+- [ ] Page gestion des objets
+- [ ] Formulaire ajout d’objet
+- [ ] Upload une ou plusieurs photos
+- [ ] Champ prix estimatif
+- [ ] Liste des objets des autres utilisateurs
+- [ ] Fiche objet détaillée
+- [ ] Formulaire proposition d’échange
+- [ ] Page gestion des échanges
+- [ ] Bouton accepter / refuser échange
+- [ ] Barre de recherche (titre + catégorie)
+- [ ] Page historique d’un objet (publique)
+
+### Backoffice (Admin)
+- [ ] Page login admin (login pré-rempli)
+- [ ] Page gestion des catégories
+- [ ] Page statistiques
+- [ ] Affichage nombre d’utilisateurs
+- [ ] Affichage nombre d’échanges
+
+---
+
+## ⚙️ BACKEND (Nomena 4015)
+
+### Framework & Structure
+- [ ] Structurer le projet (routes, controllers)
+- [ ] Connexion base de données
+
+### Authentification
+- [ ] Inscription utilisateur
+- [ ] Login utilisateur
+- [ ] Login admin
+- [ ] Gestion des sessions
+- [ ] Sécurisation des accès
+
+### Logique métier
+- [ ] CRUD utilisateurs
+- [ ] CRUD catégories (admin)
+- [ ] CRUD objets
+- [ ] Gestion upload photos
+- [ ] Création proposition d’échange
+- [ ] Acceptation d’échange
+- [ ] Refus d’échange
+- [ ] Changement de propriétaire
+- [ ] Enregistrement historique d’appartenance
+- [ ] Recherche par titre et catégorie
+- [ ] Calcul statistiques admin
+
+---
+
+## 🔗 INTÉGRATION (Nomena et Rova 3904)
+
+- [ ] Lier front-end et back-end
+- [ ] Vérifier formulaires (validation)
+- [ ] Vérifier échanges complets
+- [ ] Vérifier historique public
+- [ ] Tester rôles utilisateur / admin
+- [ ] Corriger bugs
+- [ ] Nettoyage du code
+- [ ] Créer dépôt Git public
+- [ ] Pousser le code final
+- [ ] Préparer lien de la todo list
