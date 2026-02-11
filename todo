@@ -38,25 +38,24 @@
 ## 🎨 FRONT-END (Rova 3883)
 
 ### Général
-- [ ] Choisir un template Bootstrap
+- [ ] Creation des pages
 - [ ] Créer le layout global (header / footer)
 - [ ] Ajouter les noms + numéros ETU dans le footer
 
 ### Frontoffice (Utilisateur)
-- [ ] Page inscription
-- [ ] Page login utilisateur
-- [ ] Page profil utilisateur
-- [ ] Page gestion des objets
-- [ ] Formulaire ajout d’objet
+- [X] Page inscription
+- [X] Page login utilisateur
+- [X] Page profil utilisateur
+- [X] Page gestion des objets
+- [X] Formulaire ajout d’objet
 - [ ] Upload une ou plusieurs photos
-- [ ] Champ prix estimatif
-- [ ] Liste des objets des autres utilisateurs
-- [ ] Fiche objet détaillée
-- [ ] Formulaire proposition d’échange
-- [ ] Page gestion des échanges
-- [ ] Bouton accepter / refuser échange
-- [ ] Barre de recherche (titre + catégorie)
-- [ ] Page historique d’un objet (publique)
+- [X] Liste des objets des autres utilisateurs
+- [X] Fiche objet détaillée
+- [X] Formulaire proposition d’échange
+- [X] Page gestion des échanges
+- [X] Bouton accepter / refuser échange
+- [X] Barre de recherche (titre + catégorie)
+- [X] Page historique d’un objet (publique)
 
 ### Backoffice (Admin)
 - [ ] Page login admin (login pré-rempli)
