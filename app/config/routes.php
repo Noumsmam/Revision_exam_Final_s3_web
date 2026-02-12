@@ -87,7 +87,7 @@ $router->group('', function(Router $router) use ($app) {
         ]);
     });
 
-    $router->get('/objets-autres', function() use ($renderPage) {
+    $router->get('/objets_autres', function() use ($renderPage) {
         $renderPage('objets_autres', [
             'title' => 'Objets Autres'
         ]);
