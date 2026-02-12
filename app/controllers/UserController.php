@@ -13,7 +13,7 @@ class UserController {
 		$this->app = $app;
 	}
 
-    public function inscription() {
+    public static function inscription() {
         $data = [];
         $data['username'] = $_POST['nom'] ?? '';
         $data['email'] = $_POST['email'] ?? '';
@@ -23,7 +23,7 @@ class UserController {
         $user = new User(Flight::db());
 
         $user->save($data);
-        Flight::render('pages/login');
+        Flight::redirect('/');
     }
 }
 

@@ -46,7 +46,9 @@ $router->group('', function(Router $router) use ($app) {
         ]);
     });
 
-    $router->post('/inscriptions', [UserController::class,'inscription']); 
+    $router->post('/inscriptions', [UserController::class,'inscription']);
+    
+    
 
     $router->get('/home', function() use ($renderPage) {
         $renderPage('home', [
