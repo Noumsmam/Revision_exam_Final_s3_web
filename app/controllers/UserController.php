@@ -13,7 +13,7 @@ class UserController {
 		$this->app = $app;
 	}
 
-    public static function inscription() {
+    public function inscription() {
         $data = [];
         $data['username'] = $_POST['nom'] ?? '';
         $data['email'] = $_POST['email'] ?? '';
