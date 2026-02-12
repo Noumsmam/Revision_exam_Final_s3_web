@@ -18,7 +18,7 @@
                     <input class="input100" type="number" step="0.01" name="prix" placeholder="Prix estimatif">
                 </div>
                 <div class="wrap-input100">
-                    <input class="input100" type="file" name="photos[]" multiple accept="image/*">
+                    <input class="input100-2" type="file" name="photos[]" multiple accept="image/*">
                 </div>
                 <div class="container-login100-form-btn"><button class="login100-form-btn">Ajouter</button></div>
             </form>

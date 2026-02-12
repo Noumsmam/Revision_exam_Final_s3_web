@@ -34,6 +34,18 @@ $router->group('', function(Router $router) use ($app) {
     */
 
     $router->get('/', function() use ($renderPage) {
+        $renderPage('login', [
+            'title' => 'Login'
+        ]);
+    });
+
+    $router->get('/inscription', function() use ($renderPage) {
+        $renderPage('inscription', [
+            'title' => 'Inscription'
+        ]);
+    });
+
+    $router->get('/home', function() use ($renderPage) {
         $renderPage('home', [
             'title' => 'Accueil - Takalo Takalo'
         ]);
@@ -45,7 +57,7 @@ $router->group('', function(Router $router) use ($app) {
         ]);
     });
 
-    $router->get('/gestion-objets', function() use ($renderPage) {
+    $router->get('/gestion_objets', function() use ($renderPage) {
         $renderPage('gestion_objets', [
             'title' => 'Mes Objets'
         ]);
@@ -63,7 +75,7 @@ $router->group('', function(Router $router) use ($app) {
         ]);
     });
 
-    $router->get('/gestion-echanges', function() use ($renderPage) {
+    $router->get('/gestion_echanges', function() use ($renderPage) {
         $renderPage('gestion_echanges', [
             'title' => 'Gestion Échanges'
         ]);
@@ -72,18 +84,6 @@ $router->group('', function(Router $router) use ($app) {
     $router->get('/historique-objet', function() use ($renderPage) {
         $renderPage('historique_objet', [
             'title' => 'Historique Objet'
-        ]);
-    });
-
-    $router->get('/inscription', function() use ($renderPage) {
-        $renderPage('inscription', [
-            'title' => 'Inscription'
-        ]);
-    });
-
-    $router->get('/login', function() use ($renderPage) {
-        $renderPage('login', [
-            'title' => 'Login'
         ]);
     });
 

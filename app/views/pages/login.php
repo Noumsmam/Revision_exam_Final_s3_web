@@ -25,7 +25,7 @@
 
                 <div class="text-center p-t-12">
                     <span class="txt1">Pas encore de compte ?</span>
-                    <a class="txt2" href="/inscriptions">S'inscrire</a>
+                    <a class="txt2" href="/inscription">S'inscrire</a>
                 </div>
             </form>
         </div>

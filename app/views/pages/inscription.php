@@ -30,7 +30,7 @@
 
                 <div class="text-center p-t-12">
                     <span class="txt1">Vous avez déjà un compte ?</span>
-                    <a class="txt2" href="/login">Se connecter</a>
+                    <a class="txt2" href="/">Se connecter</a>
                 </div>
             </form>
         </div>

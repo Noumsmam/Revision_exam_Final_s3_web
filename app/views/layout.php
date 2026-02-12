@@ -24,7 +24,7 @@ if (class_exists('\Flight')) {
   $requestPath = $_SERVER['REQUEST_URI'] ?? '/';
   $requestPath = parse_url($requestPath, PHP_URL_PATH);
   $firstSegment = trim(explode('/', trim($requestPath, '/'))[0] ?? '');
-  $noLayout = in_array(strtolower($firstSegment), ['login', 'inscription', 'register', 'signup']);
+  $noLayout = in_array(strtolower($firstSegment), ['', 'inscription']);
   if (!$noLayout) {
     include 'fragments/header.html';
   }

@@ -17,6 +17,7 @@
               <p>Marie</p>
               <div class="card-buttons">
                 <a href="fiche_objet" class="btn-outline">Voir</a>
+                <a href="proposer_echange" class="btn-main">Supprimer</a>
               </div>
             </div>
           </div>
@@ -28,6 +29,7 @@
               <p>Alice</p>
               <div class="card-buttons">
                 <a href="fiche_objet" class="btn-outline">Voir</a>
+                <a href="proposer_echange" class="btn-main">Supprimer</a>
               </div>
             </div>
           </div>
