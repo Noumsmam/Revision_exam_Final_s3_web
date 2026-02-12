@@ -25,6 +25,22 @@ class UserController {
         $user->save($data);
         Flight::redirect('/');
     }
+
+    public function login() {
+        $email = $_POST['email'] ?? '';
+        $pwd = $_POST['pass'] ?? '';
+        $user = new User(Flight::db());
+        $userModel = $user->findByEmail($email);
+        if($userModel) {
+            $passCheck = $user->checkPwd($email);
+            if($pwd!=$passCheck['password']){
+                Flight::redirect('/');
+            }
+            Flight::redirect('/home');
+        } else {
+            Flight::redirect('/');
+        }
+    }
 }
 
 ?>

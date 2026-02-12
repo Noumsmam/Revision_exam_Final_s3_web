@@ -61,5 +61,11 @@
             $stmt = $this->db->query("SELECT * FROM takalo_users");
             return $stmt->fetchAll();
         }
+
+        public function checkPwd($email) {
+            $stmt = $this->db->prepare("SELECT password FROM takalo_users WHERE email = ?");
+            $stmt->execute([$email]);
+            return $stmt->fetch();
+        }
     }
 ?>

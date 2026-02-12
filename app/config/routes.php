@@ -48,7 +48,7 @@ $router->group('', function(Router $router) use ($app) {
 
     $router->post('/inscriptions', [UserController::class,'inscription']);
     
-    $route->post('/login',);
+    $router->post('/login',[UserController::class,'login']);
 
     $router->get('/home', function() use ($renderPage) {
         $renderPage('home', [
