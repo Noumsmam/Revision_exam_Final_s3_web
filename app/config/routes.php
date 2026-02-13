@@ -20,7 +20,7 @@ $router->group('', function(Router $router) use ($app) {
     $renderPage = function(string $view, array $data = []) use ($app) {
         // Génère le contenu de la page
         $content = $app->view()->fetch('pages/' . $view . '.php', $data);
-
+    
         // Affiche le layout en injectant le contenu
         $app->render('layout.php', array_merge($data, [
             'content' => $content
