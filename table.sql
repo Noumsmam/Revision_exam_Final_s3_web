@@ -2,12 +2,18 @@ DROP DATABASE IF EXISTS takalo;
 CREATE DATABASE takalo;
 USE takalo;
 
+DROP TABLE IF EXISTS takalo_users;
+DROP TABLE IF EXISTS takalo_categorie;
+DROP TABLE IF EXISTS takalo_objets;
+DROP TABLE IF EXISTS takalo_echange;
+DROP TABLE IF EXISTS takalo_histobjet;
+
 CREATE TABLE takalo_users (
     id_user INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(255) NOT NULL UNIQUE,
     email VARCHAR(255) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
-    mode VARCHAR(10) NOT NULL   -- ADMIN ou USER
+    mode VARCHAR(10) NOT NULL   
 );
 
 CREATE TABLE takalo_categorie (
@@ -20,8 +26,8 @@ CREATE TABLE takalo_objets(
     titre VARCHAR(255) NOT NULL,
     description TEXT,
     prix DOUBLE,
-    images VARCHAR(255),    --FORMAT: /img1/img2/img3/
-    etat VARCHAR(50),   -- POUR LES PROPOSITIONS D' ECHANGE: V pour selectionné, R pour le contraire
+    images VARCHAR(255),    
+    etat VARCHAR(50),   
     id_proprietaire INT,
     id_categorie INT
 );

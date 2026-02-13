@@ -586,3 +586,22 @@ textarea.input100 {
 .exchange-item:hover{
     transform: translateY(-8px);
 }
+
+.admin-home{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.admin-home a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.ambony2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: auto;
+}

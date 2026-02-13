@@ -58,7 +58,7 @@
 - [X] Page historique d’un objet (publique)
 
 ### Backoffice (Admin)
-- [ ] Page login admin (login pré-rempli)
+- [ ] Page login admin
 - [ ] Page gestion des catégories
 - [ ] Page statistiques
 - [ ] Affichage nombre d’utilisateurs

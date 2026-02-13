@@ -28,6 +28,13 @@ $router->group('', function(Router $router) use ($app) {
         ]));
     };
 
+    $adminRenderPage = function(string $view, array $data = []) use ($app){
+        $content = $app->view()->fetch('pages-admin/' . $view . '.php', $data);
+        $app->render('layout.php', array_merge($data, [
+            'content' => $content
+        ]));
+    };
+
     /*
     |--------------------------------------------------------------------------
     | Routes Web
@@ -107,6 +114,24 @@ $router->group('', function(Router $router) use ($app) {
     $router->get('/fiche_objet', function() use ($renderPage) {
         $renderPage('fiche_objet', [
             'title' => 'Fiche Objet'
+        ]);
+    });
+
+    $router->get('/admin_home', function() use ($renderPage){
+        $renderPage('admin_home', [
+            'title' => 'Dashboard'
+        ]);
+    }); 
+
+    $router->get('/gestion_categorie', function() use ($renderPage){
+        $renderPage('gestion_categorie', [
+            'title' => 'Gérer les catégories'
+        ]);
+    });
+
+    $router->get('/stat', function() use ($renderPage){
+        $renderPage('stat', [
+            'title' => 'Statistiques'
         ]);
     });
 
