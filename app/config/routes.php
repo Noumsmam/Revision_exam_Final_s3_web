@@ -1,6 +1,7 @@
 <?php
 
 use app\controllers\ApiExampleController;
+use app\controllers\UserController;
 use app\middlewares\SecurityHeadersMiddleware;
 use flight\Engine;
 use flight\net\Router;
@@ -44,6 +45,10 @@ $router->group('', function(Router $router) use ($app) {
             'title' => 'Inscription'
         ]);
     });
+
+    $router->post('/inscriptions', [UserController::class,'inscription']);
+    
+    $router->post('/login',[UserController::class,'login']);
 
     $router->get('/home', function() use ($renderPage) {
         $renderPage('home', [
@@ -111,10 +116,10 @@ $router->group('', function(Router $router) use ($app) {
     |--------------------------------------------------------------------------
     */
 
-    $router->group('/api', function() use ($router) {
-        $router->get('/users', [ ApiExampleController::class, 'getUsers' ]);
-        $router->get('/users/@id:[0-9]', [ ApiExampleController::class, 'getUser' ]);
-        $router->post('/users/@id:[0-9]', [ ApiExampleController::class, 'updateUser' ]);
-    });
+    // $router->group('/api', function() use ($router) {
+    //     $router->get('/users', [ ApiExampleController::class, 'getUsers' ]);
+    //     $router->get('/users/@id:[0-9]', [ ApiExampleController::class, 'getUser' ]);
+    //     $router->post('/users/@id:[0-9]', [ ApiExampleController::class, 'updateUser' ]);
+    // });
 
 }, [ SecurityHeadersMiddleware::class ]);

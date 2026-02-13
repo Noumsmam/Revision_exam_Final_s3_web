@@ -73,7 +73,7 @@
 - [ ] Connexion base de données
 
 ### Authentification
-- [ ] Inscription utilisateur
+- [X] Inscription utilisateur
 - [ ] Login utilisateur
 - [ ] Login admin
 - [ ] Gestion des sessions
